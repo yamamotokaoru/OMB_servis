@@ -8,4 +8,7 @@ class Blog < ApplicationRecord
 
   enum status: { draft: 0, published: 1, deleted: 2 }
   validates :status, inclusion: { in: Blog.statuses.keys }
+
+  validates :title, presence: true
+  validates :body, presence: true
 end

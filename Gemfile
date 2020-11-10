@@ -66,6 +66,8 @@ gem 'acts-as-taggable-on', '~> 6.0'
 
 gem "geocoder"
 
+gem 'kaminari','~> 1.2.1'
+
 gem 'dotenv-rails'
 group :production do
   gem 'mysql2'
